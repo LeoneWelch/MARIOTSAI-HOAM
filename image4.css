@@ -1,0 +1,145 @@
+*{margin: 0;}
+
+html, body {
+  overflow: auto !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+@font-face {
+    font-family: 'Grotesk';
+    src: url('font/ABCMonumentGrotesk-Bold-Trial.woff2') format('woff2'),
+         url('font/ABCMonumentGrotesk-Bold-Trial.woff') format('woff'),
+         url('font/ABCMonumentGrotesk-Bold-Trial.otf') format('opentype');
+    font-weight: bold; 
+    font-style: normal; 
+  }
+
+
+  @font-face {
+    font-family: 'ABCMonumentGroteskk';
+    src: url('font/ABCMonumentGrotesk-Medium-Trial.otf') format('opentype'),
+         url('font/to/ABCMonumentGrotesk-Medium-Trial.woff') format('woff'),
+         url('font/to/ABCMonumentGrotesk-Medium-Trial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+header{
+    height: 4vh;
+    width: 100vw;;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 10px;
+    position: fixed;
+    z-index: 9;
+}
+
+
+
+a{
+  text-decoration: none;
+  
+}
+
+
+a:hover {
+color: blue;
+}
+
+
+
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+footer{
+    height: 4vh;
+    width: 100vw;;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 10px;
+    position: fixed;
+    z-index: 9;
+}
+
+
+
+
+  main{
+height: 97vh;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+
+.d4img{
+  
+
+ 
+      align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.name{
+  color: blue;
+}
+
+.imgd4
+{height: 72vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.boxboteuh{
+    height: 4vh;
+    width: 98vw;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 10px;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.boxtopeuh{
+    height: 4vh;
+    width: 98vw;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 10px;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0.7%;
+}
+
+
+
+#curseur{
+    position:fixed;
+    top:0;
+    left:0;
+    margin-left:10px;
+    margin-top:-15px;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 10px;
+    color: blue;
+}

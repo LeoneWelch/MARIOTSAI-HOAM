@@ -1,0 +1,252 @@
+*{margin: 0;}
+
+html, body {
+    overflow: auto !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none !important;
+}
+
+
+@font-face {
+    font-family: 'Grotesk';
+    src: url('font/ABCMonumentGrotesk-Bold-Trial.woff2') format('woff2'),
+         url('font/ABCMonumentGrotesk-Bold-Trial.woff') format('woff'),
+         url('font/ABCMonumentGrotesk-Bold-Trial.otf') format('opentype');
+    font-weight: bold; 
+    font-style: normal; 
+  }
+
+
+  @font-face {
+    font-family: 'ABCMonumentGroteskk';
+    src: url('font/ABCMonumentGrotesk-Medium-Trial.otf') format('opentype'),
+         url('font/to/ABCMonumentGrotesk-Medium-Trial.woff') format('woff'),
+         url('font/to/ABCMonumentGrotesk-Medium-Trial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+main{
+    padding-top: 9%;
+    grid-template-columns: repeat(5,1fr);
+    padding-left: 1%;
+    padding-right: 1%;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(17,1fr);
+    height: 200vh;
+    column-gap: 1%;
+    overflow-x: hidden;
+    font-family: grotesk;
+    font-size: 1.9vh;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    word-spacing: 0px;
+    text-align: justify;
+    padding-bottom: 3%;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+
+a:hover {
+ color: blue;
+}
+
+
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.boxheader{
+height: 10vh;
+width: 100%;
+font-family: "Noto Sans Mono", monospace;
+font-size: 1vh;
+position: fixed;
+z-index: 9;
+background-color: white;
+}
+
+
+.logo{
+    width: 11vh;
+    margin-top: 1vh;
+    }
+    
+    .boxtop{
+        height: 38%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+
+.boxbot{
+height: 50%;
+width: 18.7vw;
+display: flex;
+justify-content: center;
+justify-content: space-between;
+padding-left: 1%;
+
+}
+
+
+.midbox{
+    display: flex;
+    align-items: center;
+    width: 18vw;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    padding-left: 13%;
+    padding-top: 0.4%;
+}
+
+
+
+.rightbox{
+display: flex;
+align-items: center;
+width: 19vw;
+justify-content: space-between;
+padding-bottom: 1%;
+padding-top: 0.4%;
+}
+
+
+.inboxleft{
+height: 100%;
+width: 30%;
+align-items: flex-end; 
+display: flex;
+color: blue;
+}
+
+
+
+.inboxright{
+height: 100%;
+width: 50%;
+display: flex;
+align-items: flex-end; 
+justify-content: space-between;
+color: blue;
+    }
+
+
+
+#contact:hover{
+color: blue;
+}
+
+
+#ticket:hover{
+    color: blue;
+}
+
+
+#index:hover{
+    color: blue;
+}
+
+
+
+#name{
+    color: blue;
+}
+
+
+#info:hover{
+    color: blue;
+}
+
+
+#cn:hover{
+    color: blue;
+}
+
+#kr:hover{
+    color: blue;
+}
+
+
+.topinfo{
+display: grid;
+grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 1;
+grid-row-end: 5;
+grid-template-columns: repeat(5,1fr);
+}
+
+
+.leftinfo{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    }
+
+
+.rightinfo{
+
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5
+        }
+
+
+.infotext{
+font-family: grotesk;
+}
+
+
+.bluetext{
+color: blue;
+}
+
+
+
+
+
+.topinfo2{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 18;
+    grid-template-columns: repeat(5,1fr);
+    }
+    
+    
+    .leftinfo2{
+    
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 8;
+        grid-row-end: 12;
+        }
+    
+    
+    .rightinfo2{
+    
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 8;
+        grid-row-end: 12
+            }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="image6.css">
+    <script src="js/boute.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="curseur">
+        <p id="boute">next</p>
+    </div>
+    <header>
+        <div class="boxtopeuh">
+            <p class="name">MAZHA LIGHTING SYSTEM 4.0 & 4.1</p>
+          <a href="index.html">Close</a>
+        </div>
+    </header>
+    <main>
+        <div class="d6img">
+            <img class="imgd6" src="d6/image1.png" alt="">
+        </div>
+    </main>
+    <footer>
+        <div class="boxboteuh">
+            <p></p>
+            <p id="counter">image </p>
+        </div>
+    </footer>
+
+
+    <script>
+        var imgd1 = document.querySelector(".imgd6");
+
+        var indice = 1;
+
+
+
+
+
+
+
+        window.addEventListener("mousemove", function (event) {
+            var horizontal = event.clientX;
+            var vertical = event.clientY;
+            //console.log(horizontal);
+
+            gsap.to(curseur, { left: horizontal, top: vertical, duration: 0 });
+
+            var windowWidth = window.innerWidth;
+            var threshold = windowWidth / 2;
+
+            if (horizontal < threshold) {
+                boute.innerHTML = "Back";
+                curseur.style.marginLeft = "-40px";
+
+            } else {
+                boute.innerHTML = "Next";
+                curseur.style.marginLeft = "20px";
+            }
+        });
+
+
+
+        window.addEventListener("click", function () {
+
+            var horizontal = event.clientX;
+            var vertical = event.clientY;
+
+            gsap.to(curseur, { left: horizontal, top: vertical, duration: 0 });
+
+            var windowWidth = window.innerWidth;
+            var threshold = windowWidth / 2;
+
+            if (horizontal < threshold) {
+                if (indice <= 1) {
+                    indice = 12;
+                }
+                indice--;
+                imgd1.src = "d6/image" + indice + ".png";
+                console.log(indice);
+                console.log(imgd1);
+                counter.innerHTML = "image " + indice;
+
+            } else {
+                if (indice >= 11) {
+                    indice = 0;
+                }
+                indice++;
+                imgd1.src = "d6/image" + indice + ".png";
+                console.log(indice);
+                console.log(imgd1);
+                counter.innerHTML = "image " + indice;
+            }
+        })
+    </script>
+</body>
+</html>
