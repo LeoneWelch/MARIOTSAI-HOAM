@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="Java/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+        <script src="js/libs/Draggable.min.js"></script>
+        <script src="js/libs/gsap.min.js"></script>
+        <script src="js/libs/InertiaPlugin.min.js"></script>
+        <script src="js/scrollmenu.js"></script>
+        <script src="js/main.js" defer></script>
+        <script src="js/libs/scrolltrigger.js"></script>
+        <script src="js/libs/ScrollSmoother.min.js"></script>
+        <script src="js/libs/scrollsmoother.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+        <script>
+            function animateIntroduction() {
+                gsap.from('.logo', { opacity: 0, duration: 1, delay: 0.5 });
+                gsap.from('.boxheader', { y: -50, opacity: 0, duration: 1, delay: 1 });
+                gsap.from('.mainn', { opacity: 0, duration: 1, delay: 1.5 });
+            }
+            window.addEventListener('load', animateIntroduction);
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <div class="boxheader">
+                <div class="boxtop">
+                    <a href="index.html"><img class="logo" src="logo.svg" alt=""></a>
+                    <div class="midbox">
+                        <a href="contact.html"><p id="contact">contact</p></a>
+                        <p id="ticket">ticket</p>
+                        <p id="langue"> <a href="index.html"><span id="kr">kr</span></a>/<a href="indexcn.html"><span id="cn">cn</span></a></p>
+                    </div>
+                    <div class="rightbox">
+                     <a href="index.html">  <p id="name">Mario Tsai</p></a> 
+                        <a href="info.html" id="info">info</a>
+                        <a href="gallery.html" id="index">index</a>
+                    </div>
+                </div>
+                <div class="boxbot">
+
+                    <div class="inboxleft">
+                        <p>HOAM</p>
+                    </div>
+                    <div class="inboxright">
+                        <p>MUSEUM</p>
+                        <p>OF</p>
+                        <p>ART</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </header>
+
+
+        <main class="mainn">
+            <div id="d1">
+                <div id="textd1">
+                    <div id="texttopd1">
+                        <p id="textd11"><a href="image.html"> 01</a></p>
+                       <p id="textd12"><a href="image.html">GRID BENCH</a> </p>
+                        <p id="textd13"><a href="image.html">BLACK WHITE AND GREY</a></p>
+                        <p id="textd14"><a href="image.html">2019</a></p>
+                    </div>
+                    <div id="textbotd1">
+                        <p id="textd11">일</p>
+                        <p id="textd12">그리드 벤치</p>
+                        <p id="textd13">흑백과 회색</p>
+                        <p id="textd14">이천십구</p>
+                    </div>
+                </div>
+                <div id="d11">
+                    <a href="image.html">
+                        <div id="image1d1"><img src="d1/image1.png" alt=""></div>
+                    </a>
+                    <div id="image2d1"><img src="d1/image2.png" alt=""></div>
+                    <div id="image3d1"><img src="d1/image3.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image4d1"><img src="d1/image4.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image5d1"><img src="d1/image5.png" alt=""></div>
+                    <div id="image6d1"><img src="d1/image6.png" alt=""></div>
+                    <div id="image7d1"><img src="d1/image7.PNG" alt=""></div>
+                </div>
+            </div>
+
+            <div id="d2">
+                <div id="textd2">
+                    <div id="texttopd2">
+                        <p id="textd21"><a href="image2.html">02</a></p>
+                      <p id="textd22"><a href="image2.html">RONG COLLECTION</a> </p>
+                        <p id="textd23"><a href="image2.html">BENCH / CHAIR / TABLE</a></p>
+                        <p id="textd24"><a href="image2.html"> 2020</a></p>
+                    </div>
+                    <div id="textbotd2">
+                        <p id="textd21">이</p>
+                        <p id="textd22">롱 컬렉션</p>
+                        <p id="textd23">벤치/의자/테이블</p>
+                        <p id="textd24">이천이십</p>
+                    </div>
+                </div>
+                <div id="d22">
+                    <a href="image2.html">
+                        <div id="image1d2"><img src="d2/image1.png" alt=""></div>
+                    </a>
+                    <div id="whitesquare"></div>
+                    <div id="image2d2"><img src="d2/image2.png" alt=""></div>
+                    <div id="image3d2"><img src="d2/image3.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image4d2"><img src="d2/image4.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image5d2"><img src="d2/image5.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image6d2"><img src="d2/image6.png" alt=""></div>
+                    <div id="image7d2"><img src="d2/image7.png" alt=""></div>
+                </div>
+            </div>
+
+            <div id="d3">
+                <div id="textd3">
+                    <div id="texttopd3">
+                        <p id="textd31"><a href="image3.html">03</a></p>
+                        <p id="textd32"><a href="image3.html">ELICTRICITY LIGHTING</a></p>
+                        <p id="textd33"><a href="image3.html">2020</a></p>
+                    </div>
+                    <div id="textbotd3">
+                        <p id="textd31">삼</p>
+                        <p id="textd32">전기 번개</p>
+                        <p id="textd33">이천이십</p>
+                    </div>
+                </div>
+                <div id="d33">
+                    <a href="image3.html">
+                        <div id="image1d3"><img src="d3/image1.png" alt=""></div>
+                    </a>
+                    <div id="image2d3"><img src="d3/image2.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image3d3"><img src="d3/image3.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image4d3"><img src="d3/image4.png" alt=""></div>
+                    <div id="image5d3"><img src="d3/image5.png" alt=""></div>
+                    <div id="image6d3"><img src="d3/image6.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image7d3"><img src="d3/image7.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image8d3"><img src="d3/image8.png" alt=""></div>
+                </div>
+            </div>
+
+            <div id="d4">
+                <div id="textd4">
+                    <div id="texttopd4">
+                        <p id="textd41"><a href="image4.html"> 04</a></p>
+                        <p id="textd42"><a href="image4.html"> GAP LIGHTING</a></p>
+                        <p id="textd43"><a href="image4.html">2020</a></p>
+                    </div>
+                    <div id="textbotd4">
+                        <p id="textd41">사</p>
+                        <p id="textd42">갭 라이트닝</p>
+                        <p id="textd43">이천이십</p>
+                    </div>
+                </div>
+                <div id="d44">
+                    <a href="image4.html">
+                        <div id="image1d4"><img src="d4/image1.PNG" alt=""></div>
+                    </a>
+                    <div id="whitesquare"></div>
+                    <div id="image2d4"><img src="d4/image2.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image3d4"><img src="d4/image3.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image5d4"><img src="d4/image4.png" alt=""></div>
+                    <div id="image6d4"><img src="d4/image5.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image7d4"><img src="d4/image6.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image8d4"><img src="d4/image7.png" alt=""></div>
+                </div>
+            </div>
+
+            <div id="d5">
+                <div id="textd5">
+                    <div id="texttopd5">
+                        <p id="textd51"> <a href="image5.html">05</a> </p>
+                        <p id="textd52"> <a href="image5.html">PULL TABLE</a></p>
+                        <p id="textd53"><a href="image5.html"> 2019</a></p>
+                    </div>
+                    <div id="textbotd5">
+                        <p id="textd51">오</p>
+                        <p id="textd52">풀 테이블</p>
+                        <p id="textd53">이천십구</p>
+                    </div>
+                </div>
+                <div id="d55">
+                    <a href="image5.html">
+                        <div id="image1d5"><img src="d5/image1.png" alt=""></div>
+                    </a>
+                    <div id="image2d5"><img src="d5/image2.png" alt=""></div>
+                    <div id="image3d5"><img src="d5/image3.png" alt=""></div>
+                    <div id="image4d5"><img src="d5/image4.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image5d5"><img src="d5/image5.png" alt=""></div>
+                    <div id="image6d5"><img src="d5/image6.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image7d5"><img src="d5/image7.png" alt=""></div>
+                    <div id="image8d5"><img src="d5/image8.png" alt=""></div>
+                </div>
+            </div>
+
+            <div id="d6">
+                <div id="textd6">
+                    <div id="texttopd6">
+                        <p id="textd61"> <a href="image6.html">06</a></p>
+                        <p id="textd62"><a href="image6.html">MAZHA LIGHTING SYSTEM 4.0 & 4.1</a></p>
+                        <p id="textd63"><a href="image6.html">2020</a></p>
+                    </div>
+                    <div id="textbotd6">
+                        <p id="textd61">육</p>
+                        <p id="textd62">마자 조명 시스템 4.0 & 4.1</p>
+                        <p id="textd63">이천이십</p>
+                    </div>
+                </div>
+                <div id="d66">
+                    <a href="image6.html">
+                        <div id="image1d6"><img src="d6/image1.png" alt=""></div>
+                    </a>
+                    <div id="whitesquare"></div>
+                    <div id="image2d6"><img src="d6/image2.png" alt=""></div>
+                    <div id="image3d6"><img src="d6/image3.PNG" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image4d6"><img src="d6/image4.png" alt=""></div>
+                    <div id="image5d6"><img src="d6/image5.png" alt=""></div>
+                    <div id="image6d6"><img src="d6/image6.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image7d6"><img src="d6/image7.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="imaeg8d6"><img src="d6/image8.png" alt=""></div>
+                    <div id="image9d6"><img src="d6/image9.png" alt=""></div>
+                    <div id="image10d6"><img src="d6/image10.png" alt=""></div>
+                </div>
+            </div>
+
+            <div id="d7">
+                <div id="textd7">
+                    <div id="texttopd7">
+                        <p id="textd71"><a href="image7.html">07</a> </p>
+                        <p id="textd72"><a href="image7.html">GONGZHENG COLLECTION</a></p>
+                        <p id="textd73"> <a href="image7.html">2019</a></p>
+                    </div>
+                    <div id="textbotd7">
+                        <p id="textd71">칠</p>
+                        <p id="textd72">공젱 컬렉션</p>
+                        <p id="textd73">이천십구</p>
+                    </div>
+                </div>
+                <div id="d77">
+                    <a href="image7.html">
+                        <div id="image1d7"><img src="d7/image1.png" alt=""></div>
+                    </a>
+                    <div id="image2d7"><img src="d7/image2.png" alt=""></div>
+                    <div id="image3d7"><img src="d7/image3.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image4d7"><img src="d7/image4.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image5d7"><img src="d7/image5.png" alt=""></div>
+                    <div id="image6d7"><img src="d7/image6.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image7d7"><img src="d7/image7.png" alt=""></div>
+                </div>
+            </div>
+
+            <div id="d8">
+                <div id="textd8">
+                    <div id="texttopd8">
+                        <p id="textd81"><a href="image8.html">08</a></p>
+                        <p id="textd82"><a href="image8.html">MAZHA LIGHTING SYSTEM 2.0</a></p>
+                        <p id="textd83"><a href="image8.html">2019</a></p>
+                    </div>
+                    <div id="textbotd8">
+                        <p id="textd81">팔</p>
+                        <p id="textd82">마자 조명 시스템 2.0</p>
+                        <p id="textd83">이천십구</p>
+                    </div>
+                </div>
+                <div id="d88">
+                    <a href="image8.html">
+                        <div id="image1d8"><img src="d8/image1.png" alt=""></div>
+                    </a>
+                    <div id="image2d8"><img src="d8/image2.png" alt=""></div>
+                    <div id="image3d8"><img src="d8/image3.png" alt=""></div>
+                    <div id="image4d8"><img src="d8/image4.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image5d8"><img src="d8/image5.png" alt=""></div>
+                    <div id="image6d8"><img src="d8/image6.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image7d8"><img src="d8/image7.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image8d8"><img src="d8/image8.png" alt=""></div>
+                </div>
+            </div>
+
+            <div id="d9">
+                <div id="textd9">
+                    <div id="texttopd9">
+                        <p id="textd91"> <a href="image9.html">09</a></p>
+                  <p id="textd92"> <a href="image9.html">PRESS TABLES</a></p>
+                        <p id="textd93"> <a href="image9.html">2016 / 2019</a></p>
+                    </div>
+                    <div id="textbotd9">
+                        <p id="textd91">구</p>
+                        <p id="textd92">프레스 테이블</p>
+                        <p id="textd93">이천십육 / 이천십구</p>
+                    </div>
+                </div>
+                <div id="d99">
+                    <a href="image9.html">
+                        <div id="imaeg1d9"><img src="d9/image1.png" alt=""></div>
+                    </a>
+                    <div id="whitesquare"></div>
+                    <div id="image2d9"><img src="d9/image2.png" alt=""></div>
+                    <div id="image3d9"><img src="d9/image3.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image4d9"><img src="d9/image4.png" alt=""></div>
+                    <div id="image5d9"><img src="d9/image5.png" alt=""></div>
+                    <div id="image6d9"><img src="d9/image6.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image7d9"><img src="d9/image7.png" alt=""></div>
+                    <div id="whitesquare"></div>
+                    <div id="image8d9"><img src="d9/image8.png" alt=""></div>
+                    <div id="image9d9"><img src="d9/image9.png" alt=""></div>
+                   
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+
+        <footer></footer>
+
+
+</body>
+</html>
